@@ -1,0 +1,37 @@
+#mycode {
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre {
+    position: relative;
+    .btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: none;
+        color: #9c9c9c;
+        border: 1px solid #232323;
+        background: #333333;
+        &:hover {
+            color: #ffffff
+        }
+    }
+    td {
+        &.hljs-ln-numbers {
+            padding-right: 0.8rem;
+            padding-left: 0.5rem;
+            text-align: center;
+            vertical-align: top;
+            color: #9c9c9c;
+            border-right: 0.5px solid #9c9c9c;
+        }
+        &.hljs-ln-code {
+            padding-left: 1rem;
+        }
+    }
+    &:hover .btn {
+        display: block;
+    }
+}
