@@ -1,0 +1,36 @@
+/* 电脑端通栏导航条 v1.0 */
+$navbar-height: 50px;
+.web_full-nav {
+    height: $navbar-height;
+    background-color: var(--main-color);
+    .web_nav-item {
+        line-height: $navbar-height;
+        height: $navbar-height;
+        .uk-dropdown {
+            padding: 0;
+            .web_nav-subitem {
+                line-height: 35px;
+                a {
+                    display: block;
+                    color: #434343;
+                }
+                &:hover a {
+                    color: #141414;
+                    background-color: var(--main-color-opacity);
+                }
+            }
+        }
+        &:first-child {
+            border-left: none;
+        }
+        & > a {
+            font-size: 18px;
+            font-weight: lighter;
+            display: block;
+            color: #ffffff;
+        }
+        &.uk-active, &:hover {
+            background-color: var(--secondary-color);
+        }
+    }
+}

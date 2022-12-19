@@ -1,0 +1,1 @@
+.m_nav{position:fixed;z-index:666666;bottom:0;left:0;width:100%;background-color:var(--main-color)}.m_nav>a{font-size:3.5vw;line-height:6vw;padding:2.5vw 0;color:#fff}.m_nav>a.uk-active{background-color:var(--secondary-color)}.m_nav>a:not(:first-child){border-left:2px solid #666}.m_nav .icon{width:6vw;height:6vw}/*# sourceMappingURL=wap_nav.min.css.map */
