@@ -1,6 +1,7 @@
 /* 电脑端通栏导航条 v1.0 */
 $navbar-height: 50px;
 .web_full-nav {
+    z-index: 666666;
     height: $navbar-height;
     background-color: var(--main-color);
     .web_nav-item {
