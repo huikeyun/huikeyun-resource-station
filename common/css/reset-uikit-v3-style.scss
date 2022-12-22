@@ -62,6 +62,9 @@ $browser-default-font-size: 16px !default;
     color: #585858;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
 }
+.uk-card-primary {
+    background-color: var(--main-color);
+}
 .uk-card-title {
     font-size: pxTorem(18px);
     font-weight: 700;
