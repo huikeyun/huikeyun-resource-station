@@ -5,6 +5,9 @@ $browser-default-font-size: 16px !default;
     @return $px / $browser-default-font-size * 1rem;
 }
 /* 其他 */
+* {
+    font-family: "SourceHanSansCN-Normal", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
+}
 .uk-link, a, .uk-navbar-nav > li > a {
     color: #181818;
     &:hover {
