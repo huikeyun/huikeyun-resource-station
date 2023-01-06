@@ -1,4 +1,4 @@
-/* 覆盖uilit样式 v1.1 */
+/* 覆盖uilit样式 */
 /* 利用变量px转为rem */
 $browser-default-font-size: 16px !default;
 @function pxTorem($px) { //$px为需要转换的字号
@@ -9,6 +9,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     font-family: "SourceHanSansCN-Normal", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
 }
 .uk-link, a, .uk-navbar-nav > li > a {
+    min-height: auto;
     color: #181818;
     &:hover {
         color: var(--main-color);
