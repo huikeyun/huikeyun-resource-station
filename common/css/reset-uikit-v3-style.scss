@@ -9,7 +9,6 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     font-family: "SourceHanSansCN-Normal", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
 }
 .uk-link, a, .uk-navbar-nav > li > a {
-    min-height: auto;
     color: #181818;
     &:hover {
         color: var(--main-color);
