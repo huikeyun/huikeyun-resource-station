@@ -4,104 +4,78 @@ $browser-default-font-size: 16px !default;
 @function pxTorem($px) { //$px为需要转换的字号
     @return $px / $browser-default-font-size * 1rem;
 }
-
 /* 其他 */
-html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
     font-family: "source-han-sans-sc-regular", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
 }
-
 .uk-link, a, .uk-navbar-nav > li > a {
     color: #181818;
-
     &:hover {
         color: var(--main-color);
     }
 }
-
 .uk-card-primary.uk-card-body, .uk-card-primary > :not([class*=uk-card-media]), .uk-card-secondary.uk-card-body, .uk-card-secondary > :not([class*=uk-card-media]), .uk-light, .uk-offcanvas-bar, .uk-overlay-primary, .uk-section-primary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) {
     color: #ffffff;
 }
-
 .uk-light .uk-search-default .uk-search-input {
     border: 1px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
 }
-
 [class*="uk-dropdown-bottom"],
 [class*="uk-navbar-dropdown-bottom"] {
     margin-top: 0;
 }
-
 /* article 文章 */
 /* background 背景 */
 .uk-background-primary {
     background-color: var(--main-color);
 }
-
 .uk-background-secondary {
     background-color: var(--secondary-color);
 }
-
 .uk-background-muted {
     background-color: var(--background-muted-color);
 }
-
 /* badge 徽章 */
 .uk-badge {
     background-color: var(--main-color);
 }
-
 /* base 基础 */
-* + .uk-h1, * + .uk-h2, * + .uk-h3, * + .uk-h4, * + .uk-h5, * + .uk-h6, * + .uk-heading-2xlarge, * + .uk-heading-large, * + .uk-heading-medium, * + .uk-heading-small, * + .uk-heading-xlarge, * + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+* + .uk-h1, * + .uk-h2, * + .uk-h3, * + .uk-h4, * + .uk-h5, * + .uk-h6, * + .uk-heading-2xlarge, * + .uk-heading-large, * + .uk-heading-medium, * + .uk-heading-small, * + .uk-heading-xlarge, * + h1, * + h2, * + h3, * + h4, * + h5, * + h6, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
-
-.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-family: "source-han-sans-sc-regular", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
-}
-
 /* button 按钮 */
 .uk-button {
     padding: 0 1rem;
 }
-
 .uk-button-default:hover, .uk-button-text::before {
     border-color: var(--main-color);
 }
-
 .uk-button-link:hover {
     color: var(--main-color);
 }
-
 .uk-button-primary {
     background-color: var(--main-color);
 }
-
 /* card 卡片 */
 .uk-card-default {
     color: #585858;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
 }
-
 .uk-card-primary {
     background-color: var(--main-color);
 }
-
 .uk-card-title {
     font-size: pxTorem(18px);
     font-weight: 700;
 }
-
 /* dropdown 下拉菜单 */
 [class*=uk-dropdown-right] {
     margin-left: 0;
 }
-
 [class*=uk-dropdown-bottom] {
     margin-top: 0;
 }
-
 /* heading 标题 */
 .uk-heading-bullet::before {
     top: 50%;
@@ -110,88 +84,70 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     border-width: 0.3em;
     border-color: var(--main-color);
 }
-
 .uk-heading-line > ::after, .uk-heading-line > ::before {
     border-color: #bfbfbf;
 }
-
 /*  link 链接 */
 .uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
     text-decoration: none;
 }
-
 .uk-link-heading a:hover, .uk-link-toggle:hover .uk-link-heading, a.uk-link-heading:hover {
     color: var(--main-color);
 }
-
 /* logo 商标 */
 .uk-logo {
-
 }
-
 /* navbar 导航栏 */
 .uk-navbar-nav > li.uk-active > a {
     color: var(--main-color);
 }
-
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     font-size: 1rem;
 }
-
 .uk-navbar-toggle {
     min-height: inherit;
     padding: 0;
 }
-
 .uk-navbar-toggle-icon {
     & > svg {
         width: 30px;
         height: 30px;
     }
 }
-
 /* overlay 遮罩 */
 .uk-overlay {
     padding: 10px;
 }
-
 .uk-overlay-default {
     color: var(--main-color);
     background-color: rgba(255, 255, 255, 0.3);
 }
-
 .uk-overlay-primary {
     background-color: var(--overlay-primary-color);
 }
-
 /* section 区段 */
 .uk-section-primary {
     background-color: var(--section-primary);
 }
-
 /* slidenav 幻灯片导航 */
 .uk-slidenav:hover {
     color: var(--main-color);
 }
-
 /* subnav 子导航 */
 .uk-subnav-pill > * > :first-child {
     padding: 0 1.3rem;
     color: #595959;
     border-color: #434343;
 }
-
 /* text 文本 */
 .uk-text-primary {
     color: var(--main-color) !important;
 }
-
 .uk-text-meta {
     font-size: 0.9375rem;
     line-height: 1.6;
     color: #888888;
 }
-
 /* tab 选项卡 */
 .uk-tab {
     & > * {
@@ -200,28 +156,23 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
             color: #333333;
             border-bottom: 3px solid transparent;
         }
-
         &:hover {
             border-color: var(--overlay-primary-color);
         }
     }
-
     & > .uk-active > a {
         color: var(--main-color);
         border-color: var(--main-color);
     }
 }
-
 /* tile 瓷砖 */
 .uk-tile-primary {
     background-color: var(--main-color);
 }
-
 /* tooltip 工具提示 */
 .uk-tooltip {
     font-size: 14px;
 }
-
 /* utility 实用效果 */
 .uk-border-rounded {
     border-radius: var(--border-rounded);
