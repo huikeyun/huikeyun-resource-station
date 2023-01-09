@@ -76,6 +76,15 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 [class*=uk-dropdown-bottom] {
     margin-top: 0;
 }
+/* grid 网格 */
+@media (min-width: 1200px) {
+    .uk-grid {
+        margin-left: -30px;
+    }
+    .uk-grid > * {
+        padding-left: 30px;
+    }
+}
 /* heading 标题 */
 .uk-heading-bullet::before {
     top: 50%;
