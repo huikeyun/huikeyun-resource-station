@@ -90,6 +90,9 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     .uk-grid > * {
         padding-left: 30px;
     }
+    * + .uk-grid-margin, .uk-grid + .uk-grid, .uk-grid > .uk-grid-margin {
+        margin-top: 30px;
+    }
 }
 /* heading 标题 */
 .uk-heading-bullet::before {
