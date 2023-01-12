@@ -12,7 +12,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 .uk-link, a, .uk-navbar-nav > li > a {
     color: #181818;
     &:hover {
-        color: rgba(var(--main-color),1);
+        color: rgba(var(--main-color), 1);
     }
 }
 .uk-card-primary.uk-card-body, .uk-card-primary > :not([class*=uk-card-media]), .uk-card-secondary.uk-card-body, .uk-card-secondary > :not([class*=uk-card-media]), .uk-light, .uk-offcanvas-bar, .uk-overlay-primary, .uk-section-primary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) {
@@ -29,7 +29,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 /* article 文章 */
 /* background 背景 */
 .uk-background-primary {
-    background-color: rgba(var(--main-color),1);
+    background-color: rgba(var(--main-color), 1);
 }
 .uk-background-secondary {
     background-color: var(--secondary-color);
@@ -39,7 +39,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* badge 徽章 */
 .uk-badge {
-    background-color: rgba(var(--main-color),1);
+    background-color: rgba(var(--main-color), 1);
 }
 /* base 基础 */
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
@@ -50,13 +50,13 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     padding: 0 1rem;
 }
 .uk-button-default:hover, .uk-button-text::before {
-    border-color: rgba(var(--main-color),1);
+    border-color: rgba(var(--main-color), 1);
 }
 .uk-button-link:hover {
-    color: rgba(var(--main-color),1);
+    color: rgba(var(--main-color), 1);
 }
 .uk-button-primary {
-    background-color: rgba(var(--main-color),1);
+    background-color: rgba(var(--main-color), 1);
 }
 /* card 卡片 */
 .uk-card-default {
@@ -64,7 +64,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .uk-card-primary {
-    background-color: rgba(var(--main-color),1);
+    background-color: rgba(var(--main-color), 1);
 }
 .uk-card-title {
     font-size: pxTorem(18px);
@@ -98,13 +98,16 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
         margin-top: 25px;
     }
 }
+.uk-grid-collapse > *, .uk-grid-column-collapse > * {
+    padding-left: 0;
+}
 /* heading 标题 */
 .uk-heading-bullet::before {
     top: 50%;
     height: 1.4em;
     margin-top: -0.28em;
     border-width: 0.3em;
-    border-color: rgba(var(--main-color),1);
+    border-color: rgba(var(--main-color), 1);
 }
 .uk-heading-line > ::after, .uk-heading-line > ::before {
     border-color: #bfbfbf;
@@ -114,14 +117,14 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     text-decoration: none;
 }
 .uk-link-heading a:hover, .uk-link-toggle:hover .uk-link-heading, a.uk-link-heading:hover {
-    color: rgba(var(--main-color),1);
+    color: rgba(var(--main-color), 1);
 }
 /* logo 商标 */
 .uk-logo {
 }
 /* navbar 导航栏 */
 .uk-navbar-nav > li.uk-active > a {
-    color: rgba(var(--main-color),1);
+    color: rgba(var(--main-color), 1);
 }
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     font-size: 1rem;
@@ -141,7 +144,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     padding: 10px;
 }
 .uk-overlay-default {
-    color: rgba(var(--main-color),1);
+    color: rgba(var(--main-color), 1);
     background-color: rgba(255, 255, 255, 0.3);
 }
 .uk-overlay-primary {
@@ -153,7 +156,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* slidenav 幻灯片导航 */
 .uk-slidenav:hover {
-    color: rgba(var(--main-color),1);
+    color: rgba(var(--main-color), 1);
 }
 /* subnav 子导航 */
 .uk-subnav-pill > * > :first-child {
@@ -163,7 +166,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* text 文本 */
 .uk-text-primary {
-    color: rgba(var(--main-color),1) !important;
+    color: rgba(var(--main-color), 1) !important;
 }
 .uk-text-meta {
     font-size: 0.9375rem;
@@ -183,13 +186,13 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
         }
     }
     & > .uk-active > a {
-        color: rgba(var(--main-color),1);
-        border-color: rgba(var(--main-color),1);
+        color: rgba(var(--main-color), 1);
+        border-color: rgba(var(--main-color), 1);
     }
 }
 /* tile 瓷砖 */
 .uk-tile-primary {
-    background-color: rgba(var(--main-color),1);
+    background-color: rgba(var(--main-color), 1);
 }
 /* tooltip 工具提示 */
 .uk-tooltip {
