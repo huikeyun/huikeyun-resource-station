@@ -1,0 +1,19 @@
+/* 网页文字选中样式 v1.0 */
+*::selection {
+    color: #ffffff;
+    background-color: rgba(var(--secondary-color),1);
+}
+html {
+    color: #1f1f1f;
+}
+body {
+    overflow-x: hidden;
+}
+/* 渐变背景 */
+.geek_gradient-bg {
+    background-color: #e3e3e3;
+    background-image: linear-gradient(180deg, #ffffff, #e1e1e1);
+}
+.geek_text-indent {
+    text-indent: 2em;
+}
