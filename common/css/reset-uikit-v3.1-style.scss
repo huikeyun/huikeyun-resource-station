@@ -170,7 +170,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     background-color: rgba(255, 255, 255, 0.3);
 }
 .uk-overlay-primary {
-    background-color: var(--overlay-primary-color);
+    background-color: rgba(var(--secondary-color), 0.7);
 }
 /* section 区段 */
 .uk-section-primary {
