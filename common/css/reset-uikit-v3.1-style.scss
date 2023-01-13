@@ -27,16 +27,16 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     margin-top: 0;
 }
 /* align 对齐 */
-[class*=uk-align]{
+[class*=uk-align] {
     margin-bottom: 25px;
+}
+.uk-align-left {
+    margin-right: 15px;
 }
 @media (min-width: 1200px) {
     .uk-align-left, .uk-align-left\@l, .uk-align-left\@m, .uk-align-left\@s {
         margin-right: 25px;
     }
-}
-.uk-align-left {
-    margin-right: 15px;
 }
 /* background 背景 */
 .uk-background-primary {
