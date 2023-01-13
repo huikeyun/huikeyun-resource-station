@@ -9,12 +9,6 @@ $browser-default-font-size: 16px !default;
 html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
     font-family: "source-han-sans-sc-regular", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
 }
-.uk-link, a, .uk-navbar-nav > li > a {
-    color: #181818;
-    &:hover {
-        color: rgba(var(--main-color), 1);
-    }
-}
 .uk-card-primary.uk-card-body, .uk-card-primary > :not([class*=uk-card-media]), .uk-card-secondary.uk-card-body, .uk-card-secondary > :not([class*=uk-card-media]), .uk-light, .uk-offcanvas-bar, .uk-overlay-primary, .uk-section-primary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) {
     color: #ffffff;
 }
@@ -140,8 +134,19 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 .uk-logo {
 }
 /* navbar 导航栏 */
-.uk-navbar-nav > li.uk-active > a {
-    color: rgba(var(--main-color), 1);
+.uk-navbar-nav {
+    & > li {
+        & > a {
+            font-size: pxTorem(14px);
+            color: #181818;
+        }
+        &.uk-active > a {
+            color: rgba(var(--main-color), 1);
+        }
+        &:hover {
+            color: rgba(var(--main-color), 1);
+        }
+    }
 }
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     font-size: 1rem;
