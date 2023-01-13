@@ -26,7 +26,15 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 [class*="uk-navbar-dropdown-bottom"] {
     margin-top: 0;
 }
-/* article 文章 */
+/* align 对齐 */
+@media (min-width: 1200px) {
+    .uk-align-left, .uk-align-left\@l, .uk-align-left\@m, .uk-align-left\@s {
+        margin-right: 25px;
+    }
+}
+.uk-align-left {
+    margin-right: 15px;
+}
 /* background 背景 */
 .uk-background-primary {
     background-color: rgba(var(--main-color), 1);
