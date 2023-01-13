@@ -136,11 +136,11 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 /* navbar 导航栏 */
 .uk-navbar-nav {
     & > li {
-        & > a {
+        & > a, .uk-navbar-item {
             font-size: pxTorem(16px);
             color: #181818;
         }
-        &.uk-active > a {
+        &.uk-active > a, .uk-navbar-item {
             color: rgba(var(--main-color), 1);
         }
         &:hover {
