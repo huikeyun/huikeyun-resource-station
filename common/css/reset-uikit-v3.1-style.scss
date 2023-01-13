@@ -54,7 +54,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* base 基础 */
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 pxTorem(5px) 0;
+    margin: 0 0 10px 0;
 }
 /* button 按钮 */
 .uk-button {
@@ -197,7 +197,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 .uk-tab {
     & > * {
         & > a {
-            font-size: pxTorem(16px);
+            font-size: 16px;
             color: #333333;
             border-bottom: 3px solid transparent;
         }
