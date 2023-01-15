@@ -1,13 +1,13 @@
 /* 网页文字选中样式 v1.0 */
 *::selection {
     color: #ffffff;
-    background-color: rgba(var(--secondary-color),1);
-}
-html {
-    color: #1f1f1f;
+    background-color: rgba(var(--secondary-color), 1);
 }
 body {
     overflow-x: hidden;
+}
+html, body {
+    height: 100%;
 }
 /* 渐变背景 */
 .geek_gradient-bg {
