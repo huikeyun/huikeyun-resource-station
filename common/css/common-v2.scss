@@ -1,3 +1,20 @@
+/* 利用变量px转为rem */
+$browser-default-font-size: 16px !default;
+@function pxTorem($px) { //$px为需要转换的字号
+    @return $px / $browser-default-font-size * 1rem;
+}
+html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
+    font-family: "sarasa-gothic-sc-regular", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
+}
+/*飞书图标*/
+.iconpark-icon {
+    width: pxTorem(24px);
+    height: pxTorem(24px);
+}
+/*通用渐变色背景*/
+.main_gradient-bg {
+    background-image: linear-gradient(#fbfbfb, #ededed);
+}
 /* 网页文字选中样式 v1.0 */
 *::selection {
     color: #ffffff;

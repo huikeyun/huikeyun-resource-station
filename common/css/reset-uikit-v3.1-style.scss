@@ -22,14 +22,14 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* align 对齐 */
 [class*=uk-align] {
-    margin-bottom: 20px;
+    margin-bottom: pxTorem(20px);
 }
 .uk-align-left {
-    margin-right: 15px;
+    margin-right: pxTorem(15px);
 }
 @media (min-width: 1200px) {
     .uk-align-left, .uk-align-left\@l, .uk-align-left\@m, .uk-align-left\@s {
-        margin-right: 20px;
+        margin-right: pxTorem(20px);
     }
 }
 /* background 背景 */
@@ -48,7 +48,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* base 基础 */
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 5px 0;
+    margin: 0 0 pxTorem(5px) 0;
 }
 /* button 按钮 */
 .uk-button {
@@ -90,26 +90,26 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* grid 网格 */
 .uk-grid {
-    margin-left: -20px;
+    margin-left: pxTorem(-20px);
 }
 .uk-grid > * {
-    padding-left: 20px;
+    padding-left: pxTorem(20px);
 }
 * + .uk-grid-margin, .uk-grid + .uk-grid, .uk-grid > .uk-grid-margin {
-    margin-top: 20px;
+    margin-top: pxTorem(20px);
 }
 .uk-grid-collapse > *, .uk-grid-column-collapse > * {
     padding-left: 0;
 }
 @media (min-width: 1200px) {
     .uk-grid {
-        margin-left: -25px;
+        margin-left: pxTorem(-25px);
     }
     .uk-grid > * {
-        padding-left: 25px;
+        padding-left: pxTorem(25px);
     }
     * + .uk-grid-margin, .uk-grid + .uk-grid, .uk-grid > .uk-grid-margin {
-        margin-top: 25px;
+        margin-top: pxTorem(25px);
     }
 }
 /* heading 标题 */
@@ -160,13 +160,13 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 .uk-navbar-toggle-icon {
     & > svg {
-        width: 30px;
-        height: 30px;
+        width: pxTorem(30px);
+        height: pxTorem(30px);
     }
 }
 /* overlay 遮罩 */
 .uk-overlay {
-    padding: 10px;
+    padding: pxTorem(10px);
 }
 .uk-overlay-default {
     color: rgba(var(--main-color), 1);
@@ -174,6 +174,10 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 .uk-overlay-primary {
     background-color: rgba(var(--secondary-color), 0.7);
+}
+/* padding 内边距 */
+.uk-padding-small {
+    padding: pxTorem(10px);
 }
 /* section 区段 */
 .uk-section-primary {
@@ -205,9 +209,9 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 .uk-tab {
     & > * {
         & > a {
-            font-size: 16px;
+            font-size: pxTorem(16px);
             color: #333333;
-            border-bottom: 3px solid transparent;
+            border-bottom: pxTorem(3px) solid transparent;
         }
         &:hover {
             border-color: var(--overlay-primary-color);
@@ -224,12 +228,12 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* tooltip 工具提示 */
 .uk-tooltip {
-    font-size: 14px;
+    font-size: pxTorem(14px);
 }
 /* utility 实用效果 */
 .uk-border-rounded {
     border-radius: var(--border-rounded);
 }
 .uk-box-shadow-medium {
-    box-shadow: 0 2px 15px 1px rgb(0 0 0 / 20%);
+    box-shadow: 0 pxTorem(2px) pxTorem(15px) 1px rgb(0 0 0 / 20%);
 }
