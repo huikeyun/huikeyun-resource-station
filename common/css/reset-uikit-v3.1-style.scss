@@ -68,8 +68,9 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 }
 /* card 卡片 */
 .uk-card-default {
+    overflow: hidden;
     color: #585858;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 pxTorem(5px) 0 rgb(0 0 0 / 30%);
 }
 .uk-card-primary {
     background-color: rgba(var(--main-color), 1);
