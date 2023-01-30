@@ -6,6 +6,7 @@ $navbar-height: 50px;
     background-color: rgba(var(--main-color), 1);
     .web_nav-item {
         line-height: $navbar-height;
+        display: block;
         height: $navbar-height;
         .uk-dropdown {
             padding: 0;
