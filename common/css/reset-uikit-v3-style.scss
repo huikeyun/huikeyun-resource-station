@@ -1,4 +1,6 @@
-/* 覆盖uilit样式 */
+/**********************
+**覆盖UIkit V3样式 v3.0**
+***********************/
 /* 利用变量px转为rem */
 $browser-default-font-size: 16px !default;
 @function pxTorem($px) { //$px为需要转换的字号
