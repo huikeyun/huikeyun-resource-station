@@ -90,29 +90,7 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     margin-top: 0;
 }
 /* grid 网格 */
-.uk-grid {
-    margin-left: pxTorem(-20px);
-}
-.uk-grid > * {
-    padding-left: pxTorem(20px);
-}
-* + .uk-grid-margin, .uk-grid + .uk-grid, .uk-grid > .uk-grid-margin {
-    margin-top: pxTorem(20px);
-}
-.uk-grid-collapse > *, .uk-grid-column-collapse > * {
-    padding-left: 0;
-}
-@media (min-width: 1200px) {
-    .uk-grid {
-        margin-left: pxTorem(-25px);
-    }
-    .uk-grid > * {
-        padding-left: pxTorem(25px);
-    }
-    * + .uk-grid-margin, .uk-grid + .uk-grid, .uk-grid > .uk-grid-margin {
-        margin-top: pxTorem(25px);
-    }
-}
+
 /* heading 标题 */
 .uk-heading-bullet::before {
     top: 50%;
