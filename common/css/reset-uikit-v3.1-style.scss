@@ -9,7 +9,7 @@ $browser-default-font-size: 16px !default;
 html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
     font-family: "source-han-sans-sc-regular", " Segoe UI ", roboto, " Helvetica Neue ", arial, " Noto Sans ", " Liberation Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
 }
-.uk-card-primary.uk-card-body, .uk-card-primary > :not([class*=uk-card-media]), .uk-card-secondary.uk-card-body, .uk-card-secondary > :not([class*=uk-card-media]), .uk-light, .uk-offcanvas-bar, .uk-overlay-primary, .uk-section-primary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) {
+.uk-card-primary.uk-card-body .uk-text-meta, .uk-card-primary > :not([class*=uk-card-media]) .uk-text-meta, .uk-card-secondary.uk-card-body .uk-text-meta, .uk-card-secondary > :not([class*=uk-card-media]) .uk-text-meta, .uk-light .uk-text-meta, .uk-offcanvas-bar .uk-text-meta, .uk-overlay-primary .uk-text-meta, .uk-section-primary:not(.uk-preserve-color) .uk-text-meta, .uk-section-secondary:not(.uk-preserve-color) .uk-text-meta, .uk-tile-primary:not(.uk-preserve-color) .uk-text-meta, .uk-tile-secondary:not(.uk-preserve-color) .uk-text-meta {
     color: #ffffff;
 }
 .uk-light .uk-search-default .uk-search-input {
@@ -90,7 +90,6 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     margin-top: 0;
 }
 /* grid 网格 */
-
 /* heading 标题 */
 .uk-heading-bullet::before {
     top: 50%;
