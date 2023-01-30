@@ -114,23 +114,6 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
 .uk-logo {
 }
 /* navbar 导航栏 */
-.uk-navbar-nav {
-    & > li {
-        & > a, .uk-navbar-item {
-            font-size: pxTorem(16px);
-            color: #181818;
-        }
-        &.uk-active > a, .uk-navbar-item {
-            color: rgba(var(--main-color), 1);
-        }
-        &:hover {
-            color: rgba(var(--main-color), 1);
-        }
-    }
-}
-.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-    font-size: 1rem;
-}
 .uk-navbar-toggle {
     min-height: inherit;
     padding: 0;
