@@ -27,10 +27,15 @@ html, body {
     height: 100%;
 }
 /* 渐变背景 */
-.geek_gradient-bg {
+.main_gradient-bg {
     background-color: #e3e3e3;
     background-image: linear-gradient(180deg, #ffffff, #e1e1e1);
 }
-.geek_text-indent {
+/* 文本缩进 */
+.main_text-indent {
     text-indent: 2em;
+}
+/* 文本颜色 */
+.main_text-fff {
+    color: #ffffff;
 }
