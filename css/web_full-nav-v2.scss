@@ -1,10 +1,16 @@
 /**********************
 ** 电脑端通栏导航条 v2**
 **********************/
+/* 利用变量px转为rem */
+$browser-default-font-size: 16px !default;
+@function pxTorem($px) { //$px为需要转换的字号
+    @return $px / $browser-default-font-size * 1rem;
+}
 .web_full-nav {
     z-index: 666666;
     background-color: rgba(var(--main-color), 1);
     .web_nav-item {
+        padding: pxTorem(10px) 0;
         display: block;
         color: #ffffff;
         .uk-dropdown {
