@@ -1,0 +1,37 @@
+/*****************
+**悬停翻页按钮 v2**
+******************/
+/* 利用变量px转为rem */
+$browser-default-font-size: 16px !default;
+@function pxTorem($px) { //$px为需要转换的字号
+    @return $px / $browser-default-font-size * 1rem;
+}
+.show_control {
+    & > a {
+        line-height: pxTorem(80px);
+        position: fixed;
+        z-index: 666666;
+        top: 60%;
+        width: pxTorem(80px);
+        height: pxTorem(80px);
+        margin-top: pxTorem(-40px);
+        text-align: center;
+        & > .icon {
+            font-size: pxTorem(50px);
+            padding: pxTorem(10px) pxTorem(5px);
+            color: rgba(var(--main-color), 1);
+            border-radius: var(--border-rounded);
+            background-color: rgba(var(--secondary-color), 0.3);
+        }
+        &:hover {
+            opacity: 1;
+            color: rgba(var(--secondary-color), 1);
+        }
+    }
+    .show_control-prev {
+        left: 0;
+    }
+    .show_control-next {
+        right: 0;
+    }
+}
