@@ -1,12 +1,13 @@
-/********************
-** 电脑端通栏导航条v2 *
-*********************/
+/* 电脑端通栏导航条 v2.0 */
+$navbar-height: 50px;
 .web_full-nav {
     z-index: 666666;
+    height: $navbar-height;
     background-color: rgba(var(--main-color), 1);
     .web_nav-item {
+        line-height: $navbar-height;
         display: block;
-        color: #ffffff;
+        height: $navbar-height;
         .uk-dropdown {
             padding: 0;
             .web_nav-subitem {
