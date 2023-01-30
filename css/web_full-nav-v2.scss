@@ -11,8 +11,10 @@ $browser-default-font-size: 16px !default;
     background-color: rgba(var(--main-color), 1);
     .web_nav-item {
         height: 100%;
-        display: block;
-        color: #ffffff;
+        & > a {
+            display: block;
+            color: #ffffff;
+        }
         .uk-dropdown {
             padding: 0;
             .web_nav-subitem {
