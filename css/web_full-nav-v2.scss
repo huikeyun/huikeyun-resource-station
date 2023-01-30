@@ -10,10 +10,17 @@ $browser-default-font-size: 16px !default;
     z-index: 666666;
     background-color: rgba(var(--main-color), 1);
     .web_nav-item {
+        display: block;
         height: 100%;
+        color: #ffffff;
         & > a {
+            font-size: 18px;
+            font-weight: lighter;
             display: block;
             color: #ffffff;
+        }
+        &.uk-active, &:hover {
+            background-color: rgba(var(--secondary-color), 1);
         }
         .uk-dropdown {
             padding: 0;
@@ -30,15 +37,6 @@ $browser-default-font-size: 16px !default;
         }
         &:first-child {
             border-left: none;
-        }
-        & > a {
-            font-size: 18px;
-            font-weight: lighter;
-            display: block;
-            color: #ffffff;
-        }
-        &.uk-active, &:hover {
-            background-color: rgba(var(--secondary-color), 1);
         }
     }
 }
