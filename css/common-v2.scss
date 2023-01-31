@@ -6,15 +6,6 @@ $browser-default-font-size: 16px !default;
 @function pxTorem($px) { //$px为需要转换的字号
     @return $px / $browser-default-font-size * 1rem;
 }
-/*飞书图标*/
-.iconpark-icon {
-    width: pxTorem(24px);
-    height: pxTorem(24px);
-}
-/*通用渐变色背景*/
-.main_gradient-bg {
-    background-image: linear-gradient(#fbfbfb, #ededed);
-}
 /* 网页文字选中样式 v1.0 */
 *::selection {
     color: #ffffff;
@@ -26,6 +17,10 @@ body {
 html, body {
     height: 100%;
 }
+/*通用渐变色背景*/
+.app_gradient-bg {
+    background-image: linear-gradient(#fbfbfb, #ededed);
+}
 /* 文本缩进 */
 .app_text-indent {
     text-indent: 2em;
@@ -33,4 +28,30 @@ html, body {
 /* 文本颜色 */
 .app_text-fff {
     color: #ffffff !important;
+}
+/*移动端导航条*/
+.app_wap-nav {
+    position: fixed;
+    z-index: 666666;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(var(--main-color), 1);
+    box-shadow: 0 -2px 4px 1px rgb(0 0 0 / 30%);
+    & > a {
+        font-size: 3.5vw;
+        line-height: 6vw;
+        padding: 2.5vw 0;
+        color: #ffffff;
+        &.uk-active {
+            background-color: rgba(var(--secondary-color), 1);
+        }
+    }
+    & > a:not(:first-child) {
+        border-left: 2px solid #666666;
+    }
+    .icon {
+        width: 6vw;
+        height: 6vw;
+    }
 }
