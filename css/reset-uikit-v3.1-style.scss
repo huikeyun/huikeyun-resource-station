@@ -15,6 +15,12 @@ html, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .uk-h1, .uk-h
     border: 1px solid #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
 }
+* + address, * + dl, * + fieldset, * + figure, * + ol, * + p, * + pre, * + ul {
+    margin-top: 10px;
+}
+address, dl, fieldset, figure, ol, p, pre, ul {
+    margin: 0px 0 10px 0;
+}
 [class*="uk-dropdown-bottom"],
 [class*="uk-navbar-dropdown-bottom"] {
     margin-top: 0;
