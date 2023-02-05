@@ -8,17 +8,17 @@ $browser-default-font-size: 16px !default;
 }
 .show_control {
     & > a {
-        line-height: pxTorem(80px);
+        line-height: 80px;
         position: fixed;
         z-index: 666666;
         top: 60%;
-        width: pxTorem(80px);
-        height: pxTorem(80px);
-        margin-top: pxTorem(-40px);
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
         text-align: center;
         & > .icon {
-            font-size: pxTorem(50px);
-            padding: pxTorem(10px) pxTorem(5px);
+            font-size: 50px;
+            padding: 10px 5px;
             color: rgba(var(--main-color), 1);
             border-radius: var(--border-rounded);
             background-color: rgba(var(--secondary-color), 0.3);
